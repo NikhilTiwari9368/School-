@@ -1,0 +1,415 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>school</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(10%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  
+
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .marquee
+  {
+
+    background-color: black;
+
+  }
+  
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<br/>
+<br/>
+<br/>
+<marquee onmouseover="stop()"  onmouseout ="start()">
+  {% for news in newsdata %}
+    <a href="/newsdata/{{news.id}}  " > {{news.news_title}} </a> &nbsp;
+  {% endfor %}
+</marquee>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" src="static/gvm.jpg" href="/about">G.V.M. SCHOOL CHARNAL </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+        </ul>
+        </li>
+  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="static/school.jpg" alt="New York" width="400" height="100">
+        <div class="carousel-caption">
+          <h3>SCHOOL</h3>
+          <p>complete 25 year of school </p>
+        </div>      
+      </div>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>THE SCHOOL </h3>
+  <p><em>Heart Of Student</em></p>
+  <p> Established in year 1992, GAYTRI V.M.CHARNAAL is located in Rural area of Madhya Pradesh state/ut of India. In Charnal area of Sehore block of Sehore district. Area pincode is 466665.
+
+    School is providing High Secondary level education and is being managed by Private Unaided Organisation.
+    
+    Medium of instruction is Hindi, English language and school is Co-educational.
+    
+    Currently schools is being guided by principal/head teacher Mr./Ms. AJAY.
+    
+    School is affiliated with State Board for both secondary and high secondary level.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Annual function</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="static/annualday.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>LOGO</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="static/gvm.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Other </strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="static/extra.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Bass player</p>
+        <p>Loves math</p>
+        <p>Member since 2005</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">School Trips </h3>
+    <p class="text-center">Some Amaging Trips</p>
+    <ul class="list-group">
+      <li class="list-group-item">Rajasthan Trip <span class="label label-danger"></span></li>
+      <li class="list-group-item">Panchmarhi Trip<span class="label label-danger"></span></li> 
+      <li class="list-group-item">Delhi Trip <span class="badge"></span></li> 
+    </ul>
+    
+    <div class="row text-ce nter">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="static/rajasthan.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Rajasthan</strong></p>
+          <p> 02 January 2019</p>
+          
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="static/pachmarhi.jpg" alt="New York" width="400" height="300">
+          <p><strong>Panchmarhi</strong></p>
+          <p>24 December 2018</p>
+          
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="static/delhi.jpg" alt="San Francisco" width="400" height="300">
+          <p><strong>Delhi </strong></p>
+          <p> 21 December  2017</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>More Information Contact</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Location</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Charnal , Sehore , Madhya Pradesh , 466665</p>
+      <p><span class="glyphicon glyphicon-phone"></span>phone No = 9685744152</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: gayatrividhya@gmail.com</p>
+    </div>
+    <br/>
+    <bt/>
+    <br/>
+
+    {% load static %}
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<style>
+  .span-or {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: -2px;
+      margin-left: -25px;
+      background-color: #fff;
+      width: 50px;
+      text-align: center;
+  }
+
+  .hr-or {
+      background-color: #cdcdcd;
+      height: 1px;
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+  }
+
+  footer.nb-footer {
+      background: #222;
+      border-top: 4px solid #b78c33;
+  }
+
+  footer.nb-footer .about {
+      margin: 0 auto;
+      margin-top: 40px;
+      max-width: 1170px;
+      text-align: center;
+  }
+
+  footer.nb-footer .about p {
+      font-size: 13px;
+      color: #999;
+      margin-top: 30px;
+  }
+
+  footer.nb-footer .about .social-media {
+      margin-top: 15px;
+  }
+
+  footer.nb-footer .about .social-media ul li a {
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      border-radius: 50%;
+      font-size: 16px;
+      color: #b78c33;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  footer.nb-footer .about .social-media ul li a:hover {
+      background: #b78c33;
+      color: #fff;
+      border-color: #b78c33;
+  }
+
+  footer.nb-footer .footer-info-single {
+      margin-top: 30px;
+  }
+
+  footer.nb-footer .footer-info-single .title {
+      color: #aaa;
+      text-transform: uppercase;
+      font-size: 16px;
+      border-left: 4px solid #b78c33;
+      padding-left: 5px;
+  }
+
+  footer.nb-footer .footer-info-single ul li a {
+      display: block;
+      color: #aaa;
+      padding: 2px 0;
+  }
+
+  footer.nb-footer .footer-info-single ul li a:hover {
+      color: #b78c33;
+  }
+
+  footer.nb-footer .footer-info-single p {
+      font-size: 13px;
+      line-height: 20px;
+      color: #aaa;
+  }
+
+  footer.nb-footer .copyright {
+      margin-top: 15px;
+      background: #111;
+      padding: 7px 0;
+      color: #999;
+  }
+
+  footer.nb-footer .copyright p {
+      margin: 0;
+      padding: 0;
+  }
+</style>
+<body>
+    <hr class="hr-or">
+    <span class="span-or">or</span>
+    <hr class="hr-or">
+    <hr class="hr-or">
+    <footer class="nb-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="about">
+                        <img src="images/logo.png" class="img-responsive center-block" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-info-single">
+                        <h2 class="title">|   Help Center   |</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="/" title=""><i
+                                        class="fa fa-angle-double-right"></i> Knowledge </a></li>
+                                    
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-info-single">
+                        <h2 class="title">|   Main Menu  | </h2>
+                        <ul class="list-unstyled">
+                            <li><a href="/" title=""><i
+                                        class="fa fa-angle-double-right"></i> HOME</a></li>
+                            <li><a href="/about" title=""><i
+                                        class="fa fa-angle-double-right"></i> about</a></li>
+                            <li><a href="/Libarary" title=""><i
+                                        class="fa fa-angle-double-right"></i> Library</a></li>
+                            <li><a href="/sport" title=""><i
+                                        class="fa fa-angle-double-right"></i> Sports </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-info-single">
+                        <h2 class="title">|  All Services  | </h2>
+                        <ul class="list-unstyled">
+                            <li><a href="/admission" title=""><i
+                                        class="fa fa-angle-double-right"></i> Admission </a></li>
+                            <li><a href="/interactive" title=""><i
+                                        class="fa fa-angle-double-right"></i> Leader </a></li>
+                            <li><a href="/mission" title=""><i
+                                        class="fa fa-angle-double-right"></i>Vision & Mission</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-info-single">
+                        <h2 class="title"> |  Contact Us  | </h2>
+                        <li><a href="/" title=""><i
+                            class="fa fa-angle-double-right"></i> Address: Charnal Near Bus Stand , 
+                                                                  Tehsil : Shyampur , district :
+                            Sehore , Madhya Pradesh 466665 ,</a></li>
+                        <li><a href="/" title=""><i
+                            class="fa fa-angle-double-right"></i> Number : +91 9773882173 , +91 8755562295 </a></li>
+                        <li><a href="/" title=""><i
+                            class="fa fa-angle-double-right"></i> Email : info@growthguide.co.in </a></li>
+                        <li><a href="/" title=""><i
+                            class="fa fa-angle-double-right"></i>Timing : Mon to Sat : 10:00 A.M. 4:00 P.M.</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <ul class="list-inline  container-fluid bg-2 text-center ">
+                
+                <li><a href="https://www.facebook.com/home.php" title=""><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="https://twitter.com/i/flow/login" title=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="https://twitter.com/hashtag/knowledge" title=""><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.google.co.in/" title=""><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  <ul class="nav nav-tabs">
+  </ul>
+</div>
+
+<!-- Image of location/map -->
+
+
+</body>
+</html>

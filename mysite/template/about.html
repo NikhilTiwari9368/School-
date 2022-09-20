@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>school</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(10%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  
+
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  
+
+  
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+ 
+
+  
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+        </ul>
+        </li>
+  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/">GVM SCHOOL CHARNAL</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">GVM SCHOOL</h3>
+  <img src="/static/gvm.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>Gayatri Vidhya Mandir </h3>
+</div>
+
+<!-- Second Container -->
+<br/>
+<br/>
+<br/>
+
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">EDUCATION BACKGROUND</h3>
+  <p> About GOVT. HS CHARNAL
+    GOVT. HS CHARNAL was established in 2006 and it is managed by the Department of Education. 
+    It is located in Rural area. It is located in SEHORE block of SEHORE district of Madhya Pradesh. 
+    The school consists of Grades from 9 to 10. The school is Co-educational and it doesn't have an attached pre-primary section. 
+    The school is Non-Ashram type (Govt.) in nature and is not using school building as a shift-school. 
+    Hindi is the medium of instructions in this school. This school is approachable by all weather road. 
+    In this school academic session starts in April.</p>
+    <p>The school has Government building. 
+      It has got 0 classrooms for instructional purposes. 
+      All the classrooms are in good condition. 
+      It has 2 other rooms for non-teaching activities. 
+      The school has a separate room for Head master/Teacher. 
+      The school has No Boundary Wall boundary wall. 
+      The school has have electric connection. 
+      The source of Drinking Water in the school is Hand Pumps and it is functional. 
+      The school has 1 boys toilet and it is functional. and 1 girls toilet and it is functional. 
+      The school has a playground. The school has a library and has 350 books in its library. 
+      The school does not need ramp for disabled children to access classrooms.
+      The school has no computers for teaching and learning purposes The school is not having a computer aided learning lab. 
+      The school is Not Applicable providing mid-day meal.</p>
+  <a href="#" class="btn btn-default btn-lg">
+    
+  </a>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+
+
+{% extends "footer.html" %}
+
+
+

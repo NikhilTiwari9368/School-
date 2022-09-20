@@ -1,0 +1,40 @@
+
+
+python manage.py startapp service
+
+python manage.py makemigrations 
+
+python manage.py migrate 
+
+////// order function use in this //////
+
+servicedata = Services.objects.all().order_by('-service_title')
+
+    data={
+        'servicedata' : servicedata
+    }
+
+
+- before column name mean descending order without - mean ascending 
+
+
+/// Use the limiting set query in the file //// 
+
+servicedata = Services.object.all().order_by('-service_title)[:3]
+
+
+//// Template filters in Django /////
+
+<p>
+    {{n.service_desc | safe , lower , upper | safe  }} 
+</p>
+
+
+
+//// Django TinyMCE Sditor integration with News App ////
+
+
+//// from Tinymce.models import HTMLField ////
+
+///DISPLAY NEWS IN MARQUEE TAG ////
+
